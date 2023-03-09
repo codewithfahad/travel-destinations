@@ -1,0 +1,79 @@
+body {
+  /* background: linear-gradient(to right bottom, #7ed56f, #28b485); */
+  background: linear-gradient(to right, rgb(227, 255, 253), rgb(202, 243, 240));
+}
+
+header {
+  position: static;
+}
+
+main li img {
+  width: 28rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52rem, 1fr));
+  gap: 2rem;
+  padding: 8rem;
+}
+
+.item-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: rgb(226, 226, 226); */
+}
+
+.item-content h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.places-grid li {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 2px 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+#london {
+  display: flex;
+  grid-column: 1 / -1;
+}
+
+#actions {
+  text-align: end;
+}
+
+#actions a:link,
+#actions a:visited {
+  color: rgb(22, 211, 228);
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+}
+
+#actions a:hover,
+#actions a:active {
+  background-color: rgb(235, 253, 255);
+}
+
+#sydney {
+  grid-column: 1 / -1;
+}
+
+#miami {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}

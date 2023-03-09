@@ -1,0 +1,106 @@
+#hero {
+  height: 80rem;
+  background-image: url(/img/places/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+  /* column-gap: 6rem; */
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  width: 45vw;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+  padding: 3.5rem 5.5rem;
+  color: #fff;
+  box-shadow: 2px 4px 0.8rem rgb(68, 67, 67);
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+.hero-text a {
+  display: inline-block;
+  background-color: rgb(255, 251, 0);
+  padding: 1.5rem 3.5rem;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 2px 4px 0.8rem rgb(68, 67, 67);
+}
+
+.hero-text a:hover {
+  background-color: rgb(245, 232, 0);
+}
+
+.nav-item a {
+  color: rgb(255, 251, 0);
+}
+
+.nav-item a:hover {
+  border-bottom: 1px solid rgb(255, 251, 0);
+  padding-bottom: 3px;
+}
+
+#highlights {
+  padding: 8rem 6rem 12rem 6rem;
+  text-align: center;
+  background: linear-gradient(to right, rgb(227, 255, 253), rgb(202, 243, 240));
+}
+
+#highlights h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.destinations img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 3rem;
+}
+
+.destination {
+  box-shadow: 0 1rem 2em rgba(0, 0, 0, 0.1);
+}
+
+.destination span {
+  color: rgb(0, 160, 117);
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.destination p {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
